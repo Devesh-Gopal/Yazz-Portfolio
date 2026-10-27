@@ -1,0 +1,5 @@
+<script>import '../app.css'; let { children } = $props(); let menuOpen = $state(false);</script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="wordmark" href="/" aria-label="Yasshmita Naicker home">YN<span>®</span></a><a class="name" href="/">Yasshmita Naicker<span>Product Design Lead</span></a><button class="menu-toggle" onclick={() => menuOpen = !menuOpen} aria-expanded={menuOpen} aria-controls="navigation">{menuOpen ? 'Close −' : 'Menu +'}</button><nav id="navigation" class:open={menuOpen} aria-label="Main navigation"><a onclick={() => menuOpen = false} href="/#work">Selected work</a><a onclick={() => menuOpen = false} href="/#about">About me</a><a class="nav-download" href="/yasshmita-naicker-portfolio.pdf" target="_blank" rel="noreferrer">Portfolio / CV <span>↗</span></a></nav></header>
+{@render children()}
+<footer><a class="wordmark" href="/">YN<span>®</span></a><p>Intentional design. Meaningful impact.</p><span>© 2026 Yasshmita Naicker</span><a href="#top">Back to top ↑</a></footer>
